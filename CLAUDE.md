@@ -10,7 +10,7 @@ editar um módulo.
 ## 1. Sobre este repositório
 
 `python_examples` é uma trilha **pública e para iniciantes** de
-programação em Python 3, escrita em **português do Brasil (pt-BR)**. São 12
+programação em Python 3, escrita em **português do Brasil (pt-BR)**. São 13
 módulos (`modulos/NN_tema/`), cada um com um README (explicação,
 analogias, diagramas Mermaid, saídas reais, erros comuns, exercícios e
 referências), exemplos executáveis em `exemplos/` e um arquivo de testes em

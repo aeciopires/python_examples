@@ -12,7 +12,7 @@ SHELL := /bin/bash
 
 .DEFAULT_GOAL := help
 
-# O número do módulo (01 a 12), para run e test-module: make run MODULO=03
+# O número do módulo (01 a 13), para run e test-module: make run MODULO=03
 MODULO ?=
 # Um arquivo, para run-file: make run-file ARQUIVO=modulos/03_controle_de_fluxo/exemplos/adivinhe.py
 ARQUIVO ?=
@@ -50,7 +50,7 @@ run: ## Executa todos os exemplos de UM módulo (MODULO=03)
 		echo "Escolha o módulo: make run MODULO=03 (veja docs/TRILHA.md)." >&2; exit 1; \
 	fi
 	@if [ -z "$(PASTA_MODULO)" ]; then \
-		echo "Módulo '$(MODULO)' não encontrado em modulos/ - use dois dígitos (01 a 12)." >&2; exit 1; \
+		echo "Módulo '$(MODULO)' não encontrado em modulos/ - use dois dígitos (01 a 13)." >&2; exit 1; \
 	fi
 	@set -e; for arquivo in $(PASTA_MODULO)/exemplos/*.py; do \
 		echo ""; echo "===== $$arquivo ====="; \

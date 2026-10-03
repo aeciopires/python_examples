@@ -7,6 +7,7 @@
     - [Fase 2 - Organizando o código](#fase-2---organizando-o-código)
     - [Fase 3 - Programas robustos](#fase-3---programas-robustos)
     - [Fase 4 - Qualidade e ferramentas](#fase-4---qualidade-e-ferramentas)
+    - [Fase 5 - Python no trabalho](#fase-5---python-no-trabalho)
   - [Depois da trilha](#depois-da-trilha)
   - [Guias transversais](#guias-transversais)
 
@@ -14,8 +15,8 @@
 
 # Trilha de aprendizado
 
-12 módulos, do primeiro `print()` a testes automatizados e ambientes
-virtuais. Cada módulo é uma pasta em [`modulos/`](../modulos/) com um README
+13 módulos, do primeiro `print()` a testes automatizados, ambientes
+virtuais e Python aplicado a infraestrutura (DevOps e cloud). Cada módulo é uma pasta em [`modulos/`](../modulos/) com um README
 (explicação, analogias, diagramas, saídas reais, erros comuns e
 exercícios), exemplos executáveis em `exemplos/` e testes em
 [`tests/unit/`](../tests/unit/). Prepare a máquina antes com
@@ -65,7 +66,10 @@ flowchart TB
     subgraph f4["4. Qualidade e ferramentas"]
         m10["10 Testes"] --> m11["11 Anotações de tipo"] --> m12["12 Ambientes e dependências"]
     end
-    f1 --> f2 --> f3 --> f4
+    subgraph f5["5. Python no trabalho"]
+        m13["13 Python para infraestrutura<br/>(DevOps e cloud)"]
+    end
+    f1 --> f2 --> f3 --> f4 --> f5
 ```
 
 ### Fase 1 - Fundamentos
@@ -99,6 +103,16 @@ flowchart TB
 | [10 - Testes](../modulos/10_testes/README.md) | pytest, `parametrize`, fixtures, doctest, unittest, cobertura | 1 + os testes |
 | [11 - Anotações de tipo](../modulos/11_anotacoes_de_tipo/README.md) | type hints, `str \| None`, mypy | 1 |
 | [12 - Ambientes e dependências](../modulos/12_ambientes_e_dependencias/README.md) | ambientes virtuais, uv, `uv.lock`, mise | 1 |
+
+### Fase 5 - Python no trabalho
+
+Aplica tudo o que veio antes a uma área profissional. Este módulo é para
+quem trabalha (ou quer trabalhar) com infraestrutura - *DevOps engineer*,
+SRE, *cloud architect* - e continua usando só a biblioteca padrão.
+
+| Módulo | Você aprende | Exemplos |
+|---|---|---|
+| [13 - Python para infraestrutura](../modulos/13_python_para_infraestrutura/README.md) | `subprocess`, `shlex`, variáveis de ambiente, `tomllib`, `argparse`, `logging`, `re`, `ipaddress`, backoff, `hashlib` | 6 |
 
 ## Depois da trilha
 

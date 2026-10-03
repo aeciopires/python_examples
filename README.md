@@ -1,6 +1,6 @@
 <!-- TOC -->
 
-- [python\_examples](#python_examples)
+- [python_examples](#python_examples)
   - [Início rápido](#início-rápido)
   - [Como funciona](#como-funciona)
   - [Módulos](#módulos)
@@ -16,8 +16,8 @@
 # python_examples
 
 Uma trilha **para iniciantes** de programação em Python 3, em português do
-Brasil: 12 módulos, do primeiro `print()` a testes automatizados e
-ambientes virtuais. Cada módulo tem uma explicação com **analogias** e
+Brasil: 13 módulos, do primeiro `print()` a testes automatizados,
+ambientes virtuais e Python para infraestrutura (DevOps e cloud). Cada módulo tem uma explicação com **analogias** e
 **diagramas**, **exemplos executáveis** com as saídas reais, os erros mais
 comuns (com as mensagens que o Python mostra de verdade), exercícios e
 **testes automatizados**. Todo o conteúdo se apoia em **fontes oficiais** -
@@ -81,6 +81,7 @@ README discordarem, o teste falha. Detalhes em
 | 10 | [Testes](modulos/10_testes/README.md) | pytest, fixtures, `parametrize`, doctest, unittest, cobertura |
 | 11 | [Anotações de tipo](modulos/11_anotacoes_de_tipo/README.md) | type hints e o mypy |
 | 12 | [Ambientes e dependências](modulos/12_ambientes_e_dependencias/README.md) | ambientes virtuais, uv, `uv.lock`, mise |
+| 13 | [Python para infraestrutura](modulos/13_python_para_infraestrutura/README.md) | DevOps e cloud: `subprocess`, configuração, logs, CLIs, redes (CIDR), backoff, checksums |
 
 ## Comandos do dia a dia
 
