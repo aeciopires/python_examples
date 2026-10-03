@@ -1,0 +1,17 @@
+# Fixa as versões exatas das ferramentas com que este repositório é testado,
+# para que `mise install` (opcional, mas recomendado - veja REQUIREMENTS.md,
+# seção 3.3) as instale do mesmo jeito em qualquer máquina.
+#
+# - python: mantido igual ao .python-version, que o `uv` lê com o mesmo
+#   propósito - veja REQUIREMENTS.md, seção 4. "3.14" significa "a versão
+#   3.14.x mais recente".
+# - uv: gerenciador de pacotes e de ambientes virtuais (instalado a partir
+#   do release oficial astral-sh/uv, backend `aqua:astral-sh/uv`). "latest"
+#   significa "a versão mais recente".
+#
+# Fixe uma versão completa (ex.: "3.14.7") para uma instalação 100%
+# reproduzível. Confira as versões atuais com `mise ls-remote <ferramenta>`
+# antes de fixar.
+[tools]
+python = "3.14"
+uv = "latest"

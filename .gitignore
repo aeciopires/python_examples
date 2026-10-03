@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Cobertura de testes (make coverage - veja docs/TESTES.md)
+.coverage
+.coverage.*
+htmlcov/
+
+# uv / ambiente virtual
+.venv/
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store

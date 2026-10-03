@@ -1,0 +1,52 @@
+[project]
+name = "python-examples"
+version = "0.2.0"
+description = "Trilha de aprendizado de Python para iniciantes, em pt-BR, com exemplos executáveis e testes."
+readme = "README.md"
+requires-python = ">=3.14"
+license = { file = "LICENSE" }
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.10",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+# Exemplos antigos (en-US), mantidos só por histórico - veja README.md.
+extend-exclude = ["learning_python"]
+
+[tool.ruff.lint]
+# E/W: estilo (PEP 8), F: erros prováveis, I: ordem dos imports,
+# UP: sintaxe moderna, B: armadilhas comuns (bugbear).
+select = ["E", "W", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.14"
+warn_unused_ignores = true
+disallow_untyped_defs = true
+exclude = ["learning_python/"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
+
+[tool.coverage.run]
+branch = true
+source = ["modulos", "scripts"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+skip_covered = false
+exclude_also = [
+    'if __name__ == .__main__.:',
+]
