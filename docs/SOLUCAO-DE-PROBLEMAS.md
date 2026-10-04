@@ -75,6 +75,11 @@ O Python lê o arquivo inteiro antes de executar; com um erro de sintaxe,
 | `ZeroDivisionError: division by zero` | divisão por zero | [07](../modulos/07_erros_e_excecoes/README.md#lendo-um-traceback) |
 | `FileNotFoundError: [Errno 2] No such file or directory` | caminho errado, ou relativo à pasta errada | [08](../modulos/08_arquivos/README.md#erros-comuns) |
 | `TypeError: X.m() takes 0 positional arguments but 1 was given` | método sem `self` | [09](../modulos/09_classes_e_objetos/README.md#erros-comuns) |
+| `FileNotFoundError: [Errno 2] No such file or directory: 'ls -l'` | `subprocess.run()` recebeu uma string em vez de uma lista | [13](../modulos/13_python_para_infraestrutura/README.md#erros-comuns) |
+| `subprocess.CalledProcessError: Command '[...]' returned non-zero exit status N.` | `check=True` e o comando externo falhou | [13](../modulos/13_python_para_infraestrutura/README.md#erros-comuns) |
+| `subprocess.TimeoutExpired: Command '[...]' timed out after N seconds` | o comando externo passou do `timeout` | [13](../modulos/13_python_para_infraestrutura/README.md#erros-comuns) |
+| ``TypeError: File must be opened in binary mode, e.g. use `open('foo.toml', 'rb')` `` | `tomllib.load()` com arquivo aberto em modo texto | [13](../modulos/13_python_para_infraestrutura/README.md#erros-comuns) |
+| `ValueError: 10.0.0.1/24 has host bits set` | CIDR com bits de host; use o endereço da rede | [13](../modulos/13_python_para_infraestrutura/README.md#erros-comuns) |
 
 A lista completa de exceções embutidas está na
 [documentação oficial](https://docs.python.org/pt-br/3/library/exceptions.html).
@@ -85,6 +90,7 @@ A lista completa de exceções embutidas está na
 |---|---|---|
 | o terminal fica parado, sem mensagem | um `input()` esperando você digitar | digite a resposta e Enter |
 | o terminal imprime sem parar | um `while` cuja condição nunca fica falsa | Ctrl-C interrompe; garanta que o laço altere a condição |
+| o script fica parado em um comando externo | `subprocess.run()` sem `timeout`, esperando um programa que não termina (ou que pede uma resposta) | informe `timeout=` e trate `subprocess.TimeoutExpired` ([módulo 13](../modulos/13_python_para_infraestrutura/README.md#erros-comuns)) |
 
 ## Testes
 
