@@ -18,29 +18,6 @@
 Todas as mudanças relevantes deste projeto são registradas neste arquivo.
 O formato segue, de forma livre, o [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
-## [Não lançado]
-
-### Adicionado
-
-- Módulo 13, `modulos/13_python_para_infraestrutura/` (nova fase 5,
-  "Python no trabalho"): Python para quem atua com infraestrutura (DevOps
-  engineer, SRE, cloud architect), só com a biblioteca padrão e sem rede.
-  Seis exemplos - `comandos.py` (`subprocess.run`, `shlex`,
-  `shutil.which`), `configuracao.py` (valores padrão, `tomllib` e
-  variáveis de ambiente), `analisar_logs.py` (`argparse`, `logging`, `re`,
-  `Counter` e código de saída), `redes.py` (`ipaddress`: CIDR, sub-redes,
-  sobreposição), `retentativas.py` (backoff exponencial) e
-  `integridade.py` (SHA-256 com `hashlib.file_digest`) - e o README com
-  analogias, diagramas, saídas reais, erros comuns e exercícios.
-- `tests/unit/test_13_python_para_infraestrutura.py`.
-- Termos novos no `docs/GLOSSARIO.md` e mensagens novas no
-  `docs/SOLUCAO-DE-PROBLEMAS.md`.
-
-### Alterado
-
-- `README.md`, `docs/TRILHA.md`, `CLAUDE.md` e `Makefile` passam a contar
-  13 módulos.
-
 ## [0.2.0] - 2026-10-03
 
 Reescrita do repositório como uma trilha de Python para iniciantes, em
@@ -79,11 +56,26 @@ autor (guardrails, mise, uv, Makefile, testes e documentação).
   `docs/GLOSSARIO.md`. Todos os diagramas Mermaid renderizados com o
   mermaid-cli antes do commit.
 - `.gitignore` para caches do Python, cobertura e o `.venv`.
+- Módulo 13, `modulos/13_python_para_infraestrutura/` (nova fase 5,
+  "Python no trabalho"): Python para quem atua com infraestrutura (DevOps
+  engineer, SRE, cloud architect), só com a biblioteca padrão e sem rede.
+  Seis exemplos - `comandos.py` (`subprocess.run`, `shlex`,
+  `shutil.which`), `configuracao.py` (valores padrão, `tomllib` e
+  variáveis de ambiente), `analisar_logs.py` (`argparse`, `logging`, `re`,
+  `Counter` e código de saída), `redes.py` (`ipaddress`: CIDR, sub-redes,
+  sobreposição), `retentativas.py` (backoff exponencial) e
+  `integridade.py` (SHA-256 com `hashlib.file_digest`) - e o README com
+  analogias, diagramas, saídas reais, erros comuns e exercícios.
+- `tests/unit/test_13_python_para_infraestrutura.py`.
+- Termos novos no `docs/GLOSSARIO.md` e mensagens novas no
+  `docs/SOLUCAO-DE-PROBLEMAS.md`.
 
 ### Alterado
 
 - Versões revisadas e traduzidas de `learning_python/guess.py` (módulo 03,
   `adivinhe.py`) e `learning_python/fish.py` (módulo 09, `heranca.py`).
+- `README.md`, `docs/TRILHA.md`, `CLAUDE.md` e `Makefile` passam a contar
+  13 módulos.
 
 ### Mantido
 
